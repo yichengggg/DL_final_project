@@ -243,3 +243,12 @@ If you love cats, and love reading cool graphics, vision, and learning papers, p
 ## Acknowledgments
 Our code is inspired by [pytorch-DCGAN](https://github.com/pytorch/examples/tree/master/dcgan).
 # DL_final_project
+Please put training surgical images under dataset/YOUR PROJECT NAME/trainA, and masks under dataset/YOUR PROJECT NAME/trainB.
+You can run the train.py by: 
+```bash
+python train.py --dataroot ./datasets/YOUR PROJECT NAME --name YOUR PROJECT NAME --model cycle_gan 
+```
+You can run test.py to output predicted mask by:
+```bash
+python test.py --dataroot datasets/YOUR PROJECT NAME/testA --name YOUR PROJECT NAME --model test --no_dropout
+```
